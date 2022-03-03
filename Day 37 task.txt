@@ -1,0 +1,202 @@
+use ZenStudents
+
+db.ZenStudents.insertMany([
+  {
+    "ID": 1,
+    "STUDENT_NAME": "Arul",
+    "STUDENT_EMAIL": "arul@gmail.com",
+    "GENDER": "Female"
+  },
+  {
+    "ID": 2,
+    "STUDENT_NAME": "Suresh",
+    "STUDENT_EMAIL": "suresh@gmail.com",
+    "GENDER": "Male"
+  },
+  {
+    "ID": 3,
+    "STUDENT_NAME": "Shivani",
+    "STUDENT_EMAIL": "shivani@gmail.com",
+    "GENDER": "Female"
+  },
+  {
+    "ID": 4,
+    "STUDENT_NAME": "Megha",
+    "STUDENT_EMAIL": "megha@gmail.com",
+    "GENDER": "Female"
+  },
+  {
+    "ID": 5,
+    "STUDENT_NAME": "Vignesh",
+    "STUDENT_EMAIL": "vignesh@gmail.com",
+    "GENDER": "Male"
+  }
+]);
+
+db.batch.insertMany([
+  {
+    "BATCH ID": 1,
+    "BATCH_NAME": "BD30",
+    "TYPE": "Week day Batch",
+    "START_DATE": "14-01-2022",
+    "END_DATE": "14-02-2022"
+  },
+  {
+    "BATCH ID": 2,
+    "BATCH_NAME": "BW30",
+    "TYPE": "Week End Batch",
+    "START_DATE": "15-01-2022",
+    "END_DATE": "15-02-2022"
+  },
+  {
+    "BATCH ID": 3,
+    "BATCH_NAME": "BD32",
+    "TYPE": "Week day Batch",
+    "START_DATE": "16-01-2022",
+    "END_DATE": "16-02-2022"
+  },
+  {
+    "BATCH ID": 4,
+    "BATCH_NAME": "BW32",
+    "TYPE": "Week End Batch",
+    "START_DATE": "17-01-2022",
+    "END_DATE": "17-02-2022"
+  },
+  {
+    "BATCH ID": 5,
+    "BATCH_NAME": "BD34",
+    "TYPE": "Week End Batch",
+    "START_DATE": "18-01-2022",
+    "END_DATE": "18-02-2022"
+  },
+  {
+    "BATCH ID": 6,
+    "BATCH_NAME": "BW33",
+    "TYPE": "Week day Batch",
+    "START_DATE": "19-01-2022",
+    "END_DATE": "19-02-2022"
+  },
+  {
+    "BATCH ID": 7,
+    "BATCH_NAME": "BD34",
+    "TYPE": "Week day Batch",
+    "START_DATE": "20-01-2022",
+    "END_DATE": "20-02-2022"
+  },
+  {
+    "BATCH ID": 8,
+    "BATCH_NAME": "BW35",
+    "TYPE": "Week day Batch",
+    "START_DATE": "21-01-2022",
+    "END_DATE": "21-02-2022"
+  },
+  {
+    "BATCH ID": 9,
+    "BATCH_NAME": "BD30",
+    "TYPE": "Week End Batch",
+    "START_DATE": "22-01-2022",
+    "END_DATE": "22-02-2022"
+  },
+  {
+    "BATCH ID": 10,
+    "BATCH_NAME": "BW34",
+    "TYPE": "Week day Batch",
+    "START_DATE": "23-01-2022",
+    "END_DATE": "23-02-2022"
+  }
+]);
+
+
+
+
+db.Task.insertMany([
+  {
+    "TOPIC_ID": 1,
+    "TASK_ID": 1,
+    "TASK_DETAIL": "Create API",
+    "CLASS_DATE": "09-01-2022"
+  },
+  {
+    "TOPIC_ID": 2,
+    "TASK_ID": 2,
+    "TASK_DETAIL": "Host API in Heroku",
+    "CLASS_DATE": "10-10-2022"
+  },
+  {
+    "TOPIC_ID": 3,
+    "TASK_ID": 3,
+    "TASK_DETAIL": "Create a Express app",
+    "CLASS_DATE": "11-10-2021"
+  },
+  {
+    "TOPIC_ID": 4,
+    "TASK_ID": 4,
+    "TASK_DETAIL": "Node Js",
+    "CLASS_DATE": "12-10-2021"
+  },
+  {
+    "TOPIC_ID": 5,
+    "TASK_ID": 5,
+    "TASK_DETAIL": "Express Js",
+    "CLASS_DATE": "13-10-2021"
+  },
+  {
+    "TOPIC_ID": 6,
+    "TASK_ID": 6,
+    "TASK_DETAIL": "Mongo DB",
+    "CLASS_DATE": "14-10-2021"
+  },
+  {
+    "TOPIC_ID": 7,
+    "TASK_ID": 7,
+    "TASK_DETAIL": "HTML",
+    "CLASS_DATE": "15-10-2021"
+  },
+  {
+    "TOPIC_ID": 8,
+    "TASK_ID": 8,
+    "TASK_DETAIL": "JS",
+    "CLASS_DATE": "16-10-2021"
+  },
+  {
+    "TOPIC_ID": 9,
+    "TASK_ID": 9,
+    "TASK_DETAIL": "CSS",
+    "CLASS_DATE": "17-10-2021"
+  }
+]);
+
+
+
+db.Mentor.insertMany([
+  {
+    "MENTOR_ID": 1,
+    "MENTOR_NAME": "Ragav",
+    "MENTOR_SKILL": "React.js",
+    "MENTEE_COUNT": 20
+  },
+  {
+    "MENTOR_ID": 2,
+    "MENTOR_NAME": "sai mohan",
+    "MENTOR_SKILL": "Js,HTML,CSS",
+    "MENTEE_COUNT": 15
+  },
+  {
+    "MENTOR_ID": 3,
+    "MENTOR_NAME": "Kanan",
+    "MENTOR_SKILL": "JS",
+    "MENTEE_COUNT": 30
+  },
+  {
+    "MENTOR_ID": 4,
+    "MENTOR_NAME": "Ramya",
+    "MENTOR_SKILL": "Anguar",
+    "MENTEE_COUNT": 7
+  },
+  {
+    "MENTOR_ID": 5,
+    "MENTOR_NAME": "Abdul",
+    "MENTOR_SKILL": "Mongo",
+    "MENTEE_COUNT": 50
+  }
+]);
